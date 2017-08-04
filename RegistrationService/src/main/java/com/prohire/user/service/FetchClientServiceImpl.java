@@ -1,5 +1,6 @@
 package com.prohire.user.service;
 
+import com.prohire.event.PHEventDispatcher;
 import com.prohire.service.PHServiceInvoker;
 import com.prohire.user.dto.ClientDTO;
 import com.prohire.user.helper.MapperHelper;

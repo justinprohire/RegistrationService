@@ -1,5 +1,9 @@
 package com.prohire.user.service;
 
+import com.prohire._domain.HireCompany;
+import com.prohire.event.PHEventDispatcher;
+import com.prohire.event.annotation.PHEventType;
+import com.prohire.event.exception.EventDispatchException;
 import com.prohire.service.PHServiceInvoker;
 import com.prohire.user.dto.ClientDTO;
 import com.prohire.user.dto.ResponseDTO;
@@ -31,6 +35,9 @@ public class RegistrationServiceImpl implements RegistrationService {
     @Autowired
     EmailService emailService;
 
+    @Autowired
+    PHEventDispatcher eventDispatcher;
+
 
     /**
      * This method will use the repository to register the System Client
@@ -40,22 +47,36 @@ public class RegistrationServiceImpl implements RegistrationService {
     @Override
     public ResponseDTO registerClientMethod(ClientDTO clientDTO) {
         ResponseDTO responseDTO = new ResponseDTO();
-        responseDTO.setRegistrationStatus(INVALID_DATA);
-        if (clientDTO != null && ValidationHelper.validateClient(clientDTO)) {
-            if (clientRepository.getSystemClientByEmail(clientDTO.getEmailAddress()) == null) {
-                SystemClient clientModel = MapperHelper.getSystemClientFromDTO(clientDTO);
-                RegistrationResponse response = registerClientRepository.registerSystemClient(clientModel);
-                if (response != null) {
-                    responseDTO = MapperHelper.mapRegistrationDTOFromResponse(response);
-                    responseDTO.setRegistrationStatus(SUCCESS);
-                    emailService.sendEmail(clientDTO.getEmailAddress());
+        try {
+            responseDTO.setRegistrationStatus(INVALID_DATA);
+            if (clientDTO != null && ValidationHelper.validateClient(clientDTO)) {
+                if (clientRepository.getSystemClientByEmail(clientDTO.getEmailAddress()) == null) {
+                    SystemClient clientModel = MapperHelper.getSystemClientFromDTO(clientDTO);
+                    RegistrationResponse response = registerClientRepository.registerSystemClient(clientModel);
+                    if (response != null) {
+                        responseDTO = MapperHelper.mapRegistrationDTOFromResponse(response);
+                        responseDTO.setRegistrationStatus(SUCCESS);
+                        //email logging service
+                        emailService.sendEmail(clientDTO.getEmailAddress());
+                        HireCompany emailObj = new HireCompany();
+                        emailObj.setShortCode(" Send Email after registration");
+                        //email event to kafka
+                        eventDispatcher.sendEvent(PHEventType.USER_UPDATE,emailObj);
+
+                    }
+                } else {
+                    responseDTO.setRegistrationStatus(USER_ALREADY_REGISTERTED);
                 }
-            } else {
-                responseDTO.setRegistrationStatus(USER_ALREADY_REGISTERTED);
             }
+            //logging service call
+            loggingService.logData(SERVICE_NAME, "Registration status for user " + clientDTO.getEmailAddress()
+                    + " is " + responseDTO.getRegistrationStatus());
+            //logging event to kafka
+            eventDispatcher.sendEvent(PHEventType.TARIFF_UPDATE,"User registration for "
+                    +clientDTO.getEmailAddress() +" is " + responseDTO.getRegistrationStatus());
+        } catch (EventDispatchException e) {
+            e.printStackTrace();
         }
-        loggingService.logData(SERVICE_NAME, "Registration status for user " + clientDTO.getEmailAddress()
-                + " is " + responseDTO.getRegistrationStatus());
 
         return responseDTO;
     }

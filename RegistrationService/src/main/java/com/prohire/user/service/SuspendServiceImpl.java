@@ -65,10 +65,7 @@ public class SuspendServiceImpl implements SuspendService {
             loggingService.logData(SERVICE_NAME, "UnSuspend status for " + emailAddress +
                     " is " + responseDTO.getRegistrationStatus());
 
-            eventDispatcher.sendEvent(PHEventType.TARIFF_UPDATE,"Suspend done");
-            HireCompany emailObj = new HireCompany();
-            emailObj.setShortCode(" email object");
-            eventDispatcher.sendEvent(PHEventType.USER_UPDATE,emailObj);
+            eventDispatcher.sendEvent(PHEventType.TARIFF_UPDATE,"Un Suspend done");
         } catch (EventDispatchException e) {
             e.printStackTrace();
         }

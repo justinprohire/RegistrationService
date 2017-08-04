@@ -1,5 +1,8 @@
 package com.prohire.user.service;
 
+import com.prohire.event.PHEventDispatcher;
+import com.prohire.event.annotation.PHEventType;
+import com.prohire.event.exception.EventDispatchException;
 import com.prohire.service.PHServiceInvoker;
 import com.prohire.user.dto.ResponseDTO;
 import com.prohire.user.helper.PasswordGeneratorHelper;
@@ -23,27 +26,37 @@ public class GenerateNewPasswordServiceImpl implements GenerateNewPasswordServic
     @Autowired
     LoggingService loggingService;
 
+    @Autowired
+    PHEventDispatcher eventDispatcher;
+
     @Override
     public ResponseDTO requestNewPasswordMethod(String emailAddress) {
         ResponseDTO responseDTO = new ResponseDTO();
-        responseDTO.setRegistrationStatus(INVALID_EMAIL);
-        if(ValidationHelper.isValidEmail(emailAddress)){
-            SystemClient client = fetchClientRepository.getSystemClientByEmail(emailAddress);
-            if (client != null) {
-                String newPassword = PasswordGeneratorHelper.generatePassword();
-                client.setPassword(newPassword);
-                responseDTO.setEmailAddress(emailAddress);
-                responseDTO.setPassword(newPassword);
-                fetchClientRepository.updateSystemClient(client);
-                responseDTO.setRegistrationStatus(SUCCESS);
-            } else {
-                responseDTO.setRegistrationStatus(EMAIL_NOT_FOUND);
+        try {
+            responseDTO.setRegistrationStatus(INVALID_EMAIL);
+            if(ValidationHelper.isValidEmail(emailAddress)){
+                SystemClient client = fetchClientRepository.getSystemClientByEmail(emailAddress);
+                if (client != null) {
+                    String newPassword = PasswordGeneratorHelper.generatePassword();
+                    client.setPassword(newPassword);
+                    responseDTO.setEmailAddress(emailAddress);
+                    responseDTO.setPassword(newPassword);
+                    fetchClientRepository.updateSystemClient(client);
+                    responseDTO.setRegistrationStatus(SUCCESS);
+                } else {
+                    responseDTO.setRegistrationStatus(EMAIL_NOT_FOUND);
+                }
             }
+            loggingService.logData(SERVICE_NAME,"Password regeneration status for user " + emailAddress
+                    + " is " + responseDTO.getRegistrationStatus());
+            //logging event for kafka
+            eventDispatcher.sendEvent(PHEventType.TARIFF_UPDATE,"Login for " + emailAddress
+                    + " is SUCCESS" );
+        } catch (EventDispatchException e) {
+            e.printStackTrace();
         }
-        loggingService.logData(SERVICE_NAME,"Password regeneration status for user " + emailAddress
-                + " is " + responseDTO.getRegistrationStatus());
 
-    return  responseDTO;
+        return  responseDTO;
     }
 
     @Override

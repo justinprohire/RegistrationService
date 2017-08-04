@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2abff53-57fe-40ad-b6aa-6f7d2f2273db" name="Default" comment="" />
+    <list default="true" id="f2abff53-57fe-40ad-b6aa-6f7d2f2273db" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/MethodStatsDTOs-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/ProhireService-0.0.28-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/ProhireServiceDTOs-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/ProhireServiceJMX-0.0.2-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/amqp-client-4.0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/annotations-2.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/commons-beanutils-1.9.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/commons-codec-1.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/commons-collections-3.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/commons-dbcp-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/commons-lang-2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/commons-pool-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/guava-19.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/hamcrest-core-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/http-client-1.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/httpclient-4.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/httpcore-4.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/jackson-annotations-2.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/jackson-core-2.8.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/jackson-databind-2.8.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/javassist-3.21.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/reflections-0.9.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/slf4j-api-1.7.25.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-amqp-1.7.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-aop-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-beans-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-context-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-core-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-expression-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-messaging-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-rabbit-1.7.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-retry-1.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-security-core-4.2.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-tx-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/spring-web-4.3.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/lib/validation-api-1.1.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/registration-client-1.0-SNAPSHOT-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RegistrationClient/target/registration-client-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/FetchClientServiceImpl.class" afterPath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/FetchClientServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/GenerateNewPasswordServiceImpl.class" afterPath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/GenerateNewPasswordServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/LoginServiceImpl.class" afterPath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/LoginServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/RegistrationServiceImpl.class" afterPath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/RegistrationServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/SuspendServiceImpl.class" afterPath="$PROJECT_DIR$/RegistrationService/target/classes/com/prohire/user/service/SuspendServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/FetchClientServiceImpl.java" afterPath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/FetchClientServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/GenerateNewPasswordServiceImpl.java" afterPath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/GenerateNewPasswordServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/LoginServiceImpl.java" afterPath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/LoginServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/RegistrationServiceImpl.java" afterPath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/RegistrationServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/SuspendServiceImpl.java" afterPath="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/SuspendServiceImpl.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/RegistrationClient/target/" />
@@ -28,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FetchClientServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FetchClientServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/FetchClientServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="187">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +95,8 @@
       <file leaf-file-name="GenerateNewPasswordServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/GenerateNewPasswordServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-232">
-              <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="133">
+              <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -53,8 +105,8 @@
       <file leaf-file-name="LoginServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/LoginServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="58" column="47" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="58" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -73,8 +125,8 @@
       <file leaf-file-name="RegistrationServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/RegistrationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="226">
+              <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -112,11 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuspendServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SuspendServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/SuspendServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="70" column="70" lean-forward="false" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+            <state relative-caret-position="210">
+              <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,6 +190,9 @@
     <findStrings>
       <find>domain</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -184,20 +239,20 @@
         <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/repository/impl/ClientRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/RegistrationClient/src/main/java/com/prohire/user/service/FetchClientService.java" />
         <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/helper/MapperHelper.java" />
-        <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/FetchClientServiceImpl.java" />
         <option value="$PROJECT_DIR$/RegistrationRest/src/main/resources/service_config.properties" />
         <option value="$PROJECT_DIR$/RegistrationClient/src/main/java/com/prohire/user/service/GenerateNewPasswordService.java" />
         <option value="$PROJECT_DIR$/RegistrationClient/src/main/java/com/prohire/user/service/LoginService.java" />
         <option value="$PROJECT_DIR$/RegistrationClient/src/main/java/com/prohire/user/service/RegistrationService.java" />
         <option value="$PROJECT_DIR$/RegistrationClient/pom.xml" />
         <option value="$PROJECT_DIR$/RegistrationClient/src/main/java/com/prohire/user/service/SuspendService.java" />
-        <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/GenerateNewPasswordServiceImpl.java" />
-        <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/RegistrationServiceImpl.java" />
         <option value="$PROJECT_DIR$/RegistrationRest/src/main/java/com/prohire/user/ServiceController.java" />
         <option value="$PROJECT_DIR$/RegistrationRest/pom.xml" />
         <option value="$PROJECT_DIR$/RegistrationService/pom.xml" />
         <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/SuspendServiceImpl.java" />
+        <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/RegistrationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/GenerateNewPasswordServiceImpl.java" />
+        <option value="$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/FetchClientServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -279,6 +334,7 @@
     <option name="width" value="1400" />
     <option name="height" value="770" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -551,7 +607,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RestApplication">
+  <component name="RunManager" selected="Application.ServiceApplication">
     <configuration name="RestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -694,8 +750,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.RestApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ServiceApplication" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ServiceApplication" />
+        <item index="1" class="java.lang.String" itemvalue="Spring Boot.RestApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -711,12 +767,12 @@
       <updated>1501673992869</updated>
       <workItem from="1501673997462" duration="43356000" />
       <workItem from="1501849881168" duration="653000" />
-      <workItem from="1501851848026" duration="7365000" />
+      <workItem from="1501851848026" duration="8733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51374000" />
+    <option name="totallyTimeSpent" value="52742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -727,7 +783,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1416309" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.56348246" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33857316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1068,40 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/GenerateNewPasswordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/RegistrationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/FetchClientServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RegistrationClient/src/main/java/com/prohire/user/service/FetchClientService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
@@ -1148,8 +1170,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/SuspendServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="70" column="70" lean-forward="false" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+        <state relative-caret-position="210">
+          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/RegistrationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/GenerateNewPasswordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="58" column="47" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="58" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RegistrationService/src/main/java/com/prohire/user/service/FetchClientServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

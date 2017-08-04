@@ -1,5 +1,8 @@
 package com.prohire.user.service;
 
+import com.prohire.event.PHEventDispatcher;
+import com.prohire.event.annotation.PHEventType;
+import com.prohire.event.exception.EventDispatchException;
 import com.prohire.service.PHServiceInvoker;
 import com.prohire.user.dto.ClientDTO;
 import com.prohire.user.helper.ValidationHelper;
@@ -23,6 +26,9 @@ public class LoginServiceImpl implements LoginService {
     @Autowired
     LoggingService loggingService;
 
+    @Autowired
+    PHEventDispatcher eventDispatcher;
+
 
     /**
      * This method will check for the email and password to be
@@ -33,23 +39,37 @@ public class LoginServiceImpl implements LoginService {
      */
     @Override
     public String loginClientMethod(ClientDTO clientDTO) {
-        if (clientDTO != null && ValidationHelper.isValidEmail(clientDTO.getEmailAddress())) {
-            SystemClient client = fetchClientRepository.getSystemClientByEmail(clientDTO.getEmailAddress());
-            if (client != null && client.isActive()) {
-                if (client.getPassword().equals(clientDTO.getPassword())) {
-                    System.out.println("*********Login Success*********");
-                    loggingService.logData(SERVICE_NAME, "Login Success for " + clientDTO.getEmailAddress());
-                    return SUCCESS;
+        try {
+            if (clientDTO != null && ValidationHelper.isValidEmail(clientDTO.getEmailAddress())) {
+                SystemClient client = fetchClientRepository.getSystemClientByEmail(clientDTO.getEmailAddress());
+                if (client != null && client.isActive()) {
+                    if (client.getPassword().equals(clientDTO.getPassword())) {
+                        System.out.println("*********Login Success*********");
+                        //logging to Logging Service
+                        loggingService.logData(SERVICE_NAME, "Login Success for " + clientDTO.getEmailAddress());
+                        //logging event for kafka
+                        eventDispatcher.sendEvent(PHEventType.TARIFF_UPDATE,"Login for " + clientDTO.getEmailAddress()
+                        + " is SUCCESS" );
+                        return SUCCESS;
+                    } else {
+                        System.out.println("*********Invalid Login*********");
+                        loggingService.logData(SERVICE_NAME, "Login Failure for " + clientDTO.getEmailAddress());
+                        //logging event for kafka
+                        eventDispatcher.sendEvent(PHEventType.TARIFF_UPDATE,"Login for " + clientDTO.getEmailAddress()
+                                + " is FAIL" );
+                        return FAIL;
+                    }
                 } else {
-                    System.out.println("*********Invalid Login*********");
-                    loggingService.logData(SERVICE_NAME, "Login Failure for " + clientDTO.getEmailAddress());
-                    return FAIL;
+                    System.out.println("*********Inactive Client*********");
+                    loggingService.logData(SERVICE_NAME, clientDTO.getEmailAddress() + " is suspended");
+                    //logging event for kafka
+                    eventDispatcher.sendEvent(PHEventType.TARIFF_UPDATE,"Login for " + clientDTO.getEmailAddress()
+                            + " is SUSPENDED" );
+                    return CLIENT_SUSPENDED;
                 }
-            } else {
-                System.out.println("*********Inactive Client*********");
-                loggingService.logData(SERVICE_NAME, clientDTO.getEmailAddress() + " is suspended");
-                return CLIENT_SUSPENDED;
             }
+        } catch (EventDispatchException e) {
+            e.printStackTrace();
         }
         return INVLAID_EMAIL;
 
