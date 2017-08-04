@@ -1,0 +1,9 @@
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/service/RegistrationService.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/dto/ResponseDTO.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/service/LoginService.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/dto/ClientDTO.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/service/SuspendService.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/service/GenerateNewPasswordService.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/dto/AddressDTO.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/dto/PhoneNumbersDTO.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationClient/src/main/java/com/prohire/user/service/FetchClientService.java

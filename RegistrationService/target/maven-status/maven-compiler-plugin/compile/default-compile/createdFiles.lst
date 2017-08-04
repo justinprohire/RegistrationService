@@ -1,0 +1,17 @@
+com/prohire/user/model/AddressModel.class
+com/prohire/user/model/SystemClient.class
+com/prohire/user/service/SuspendServiceImpl.class
+com/prohire/user/repository/impl/RegisterClientRepositoryImpl.class
+com/prohire/user/helper/ValidationHelper.class
+com/prohire/user/repository/RegisterClientRepository.class
+com/prohire/user/model/PhoneNumbers.class
+com/prohire/user/helper/MapperHelper.class
+com/prohire/user/ServiceApplication.class
+com/prohire/user/model/RegistrationResponse.class
+com/prohire/user/repository/ClientRepository.class
+com/prohire/user/helper/PasswordGeneratorHelper.class
+com/prohire/user/service/GenerateNewPasswordServiceImpl.class
+com/prohire/user/repository/impl/ClientRepositoryImpl.class
+com/prohire/user/service/FetchClientServiceImpl.class
+com/prohire/user/service/RegistrationServiceImpl.class
+com/prohire/user/service/LoginServiceImpl.class

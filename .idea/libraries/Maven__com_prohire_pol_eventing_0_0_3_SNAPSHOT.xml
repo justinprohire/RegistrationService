@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.prohire:pol-eventing:0.0.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/pol-eventing/0.0.3-SNAPSHOT/pol-eventing-0.0.3-20170802.152134-17.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/pol-eventing/0.0.3-SNAPSHOT/pol-eventing-0.0.3-20170802.152134-17-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/pol-eventing/0.0.3-SNAPSHOT/pol-eventing-0.0.3-20170802.152134-17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

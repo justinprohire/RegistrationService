@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.prohire:pol-json-entity-annotations:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/pol-json-entity-annotations/0.0.1-SNAPSHOT/pol-json-entity-annotations-0.0.1-20170802.160006-4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/pol-json-entity-annotations/0.0.1-SNAPSHOT/pol-json-entity-annotations-0.0.1-20170802.160006-4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/pol-json-entity-annotations/0.0.1-SNAPSHOT/pol-json-entity-annotations-0.0.1-20170802.160006-4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

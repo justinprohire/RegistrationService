@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.prohire</groupId>
+    <artifactId>registration-system</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>com.prohire</groupId>
+        <artifactId>ProhireParent</artifactId>
+        <version>0.9-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>RegistrationClient</module>
+        <module>RegistrationService</module>
+        <module>RegistrationRest</module>
+    </modules>
+
+    <properties>
+        <docker.maven.plugin.version>0.4.13</docker.maven.plugin.version>
+        <docker.image.prefix>abaptie</docker.image.prefix>
+    </properties>
+
+
+
+    <build>
+        <plugins>
+            <!--Stop Docker from doing anything to Parent pom-->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.maven.plugin.version}</version>
+                <configuration>
+                    <skipDockerBuild>true</skipDockerBuild>
+                    <skipDockerPush>true</skipDockerPush>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

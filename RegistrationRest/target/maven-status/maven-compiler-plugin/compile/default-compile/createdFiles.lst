@@ -1,0 +1,4 @@
+com/prohire/user/ServiceController.class
+com/prohire/user/RestApplication.class
+com/prohire/user/config/Config.class
+com/prohire/user/config/SwaggerConfig.class

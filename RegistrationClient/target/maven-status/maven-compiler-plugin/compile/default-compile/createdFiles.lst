@@ -1,0 +1,14 @@
+com/prohire/user/dto/ResponseDTO.class
+com/prohire/user/dto/ClientDTO.class
+com/prohire/user/service/SuspendService.class
+com/prohire/user/client/GenerateNewPasswordClient.class
+com/prohire/user/dto/PhoneNumbersDTO.class
+com/prohire/user/service/LoginService.class
+com/prohire/user/client/LoginClient.class
+com/prohire/user/dto/AddressDTO.class
+com/prohire/user/client/FetchClientClient.class
+com/prohire/user/client/SuspendClient.class
+com/prohire/user/client/RegistrationClient.class
+com/prohire/user/service/RegistrationService.class
+com/prohire/user/service/GenerateNewPasswordService.class
+com/prohire/user/service/FetchClientService.class

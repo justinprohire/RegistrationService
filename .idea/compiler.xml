@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="RegistrationRest" />
+        <module name="RegistrationService" />
+      </profile>
+      <profile name="Annotation profile for registration-system" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processor name="com.prohire.service.annotation.processor.PHServiceAnnotationProcessor" />
+        <module name="RegistrationClient" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RegistrationClient" target="1.8" />
+      <module name="RegistrationRest" target="1.8" />
+      <module name="RegistrationService" target="1.8" />
+      <module name="RegistrationSystem" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

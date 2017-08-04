@@ -1,0 +1,17 @@
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/model/PhoneNumbers.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/repository/impl/RegisterClientRepositoryImpl.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/service/FetchClientServiceImpl.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/service/SuspendServiceImpl.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/repository/RegisterClientRepository.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/service/GenerateNewPasswordServiceImpl.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/repository/impl/ClientRepositoryImpl.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/model/AddressModel.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/repository/ClientRepository.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/service/LoginServiceImpl.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/service/RegistrationServiceImpl.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/helper/PasswordGeneratorHelper.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/model/SystemClient.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/helper/ValidationHelper.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/ServiceApplication.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/helper/MapperHelper.java
+/Users/justinjoseph/Documents/codebase/RegistrationSystem/RegistrationService/src/main/java/com/prohire/user/model/RegistrationResponse.java

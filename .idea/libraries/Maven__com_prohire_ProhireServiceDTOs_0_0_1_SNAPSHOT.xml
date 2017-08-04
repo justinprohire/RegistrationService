@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.prohire:ProhireServiceDTOs:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/ProhireServiceDTOs/0.0.1-SNAPSHOT/ProhireServiceDTOs-0.0.1-20170502.125018-10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/ProhireServiceDTOs/0.0.1-SNAPSHOT/ProhireServiceDTOs-0.0.1-20170502.125018-10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/ProhireServiceDTOs/0.0.1-SNAPSHOT/ProhireServiceDTOs-0.0.1-20170502.125018-10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

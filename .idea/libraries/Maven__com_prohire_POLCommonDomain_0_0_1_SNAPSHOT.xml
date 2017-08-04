@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.prohire:POLCommonDomain:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/POLCommonDomain/0.0.1-SNAPSHOT/POLCommonDomain-0.0.1-20170724.111508-6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/POLCommonDomain/0.0.1-SNAPSHOT/POLCommonDomain-0.0.1-20170724.111508-6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/prohire/POLCommonDomain/0.0.1-SNAPSHOT/POLCommonDomain-0.0.1-20170724.111508-6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
